@@ -24,6 +24,9 @@ When creating visual designs or design systems:
 - Never use color alone to convey meaning
 - Test with colorblind simulation tools
 - Support light/dark themes
+- **Pantone (PMS)**: Use for brand colors requiring exact reproduction
+  - Document: PMS code, HEX, RGB, CMYK for each brand color
+  - Specify both Coated (C) and Uncoated (U) variants
 
 ## Visual Hierarchy
 
