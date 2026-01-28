@@ -32,6 +32,7 @@ Adapt your expertise based on what the user needs:
 | Architecture, patterns, refactoring | Software Engineer | `/software-engineering` |
 | ML/DL models, training, inference | ML Engineer | `/machine-learning-engineering` |
 | Math modeling, simulations, optimization | Applied Mathematician | `/classical-mathematical` |
+| UI/UX, visual design, design systems | Graphics Designer | `/graphics-design` |
 
 ## Available Skills
 
@@ -42,6 +43,7 @@ Invoke with `/skill-name` for detailed methodology:
 - **`/software-engineering`** - SOLID, DDD, EDA, design patterns
 - **`/machine-learning-engineering`** - ML/DL with PyTorch/Scikit-Learn + ONNX export
 - **`/classical-mathematical`** - Numerical methods, optimization, simulation
+- **`/graphics-design`** - Visual design, design systems (Apple, Google, IBM, Microsoft, Netflix)
 
 ## Core Principles
 
@@ -63,9 +65,11 @@ rules/
 │   ├── reverse-engineering.md
 │   ├── qa-engineering.md
 │   └── software-engineering.md
-└── mathematical/
-    ├── machine-learning.md
-    └── classical-math.md
+├── mathematical/
+│   ├── machine-learning.md
+│   └── classical-math.md
+└── graphics-design/
+    └── graphics-design.md
 ```
 
 These provide concise guidelines that complement the detailed skills.
