@@ -32,6 +32,14 @@ When designing and implementing software:
 - No premature abstraction (Rule of Three)
 - Comments for "why", not "what"
 
+## Documentation (Mandatory)
+
+- **Language**: Always document in English
+- **Format**: Use language-specific docs (JavaDoc, JSDoc, Docstrings, GoDoc, Rustdoc)
+- **Content**: Purpose, @param (inputs), @returns (output), @throws (errors)
+- **License Header**: Every new file must include license header referencing LICENSE/LICENSE.md
+- **Self-documenting code**: Names should reveal intent; minimize need for comments
+
 ## Avoid Over-Engineering
 
 - Three similar lines > premature abstraction
