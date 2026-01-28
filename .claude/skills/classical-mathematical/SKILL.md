@@ -1,3 +1,9 @@
+---
+name: classical-mathematical
+description: Apply mathematical modeling, numerical analysis, and computational mathematics following curricula from MIT, Harvard, Oxford, Berkeley, Peking University, and UPV Valencia
+user-invocable: true
+---
+
 # Classical Mathematical Modeling Rules
 
 > *"Mathematics is the language with which God has written the universe."*

@@ -1,3 +1,9 @@
+---
+name: software-engineering
+description: Apply software engineering best practices including SOLID principles, design patterns (GoF), Domain-Driven Design, Event-Driven Architecture, and clean code principles from industry leaders
+user-invocable: true
+---
+
 # Software Engineering Rules
 
 > *"The best code is not the longest code, it is the most efficient code."*

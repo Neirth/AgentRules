@@ -1,3 +1,9 @@
+---
+name: machine-learning-engineering
+description: Develop production-ready ML/DL models using PyTorch or Scikit-Learn with mandatory ONNX export, following best practices from Hinton, LeCun, Bengio, Andrew Ng, and Karpathy
+user-invocable: true
+---
+
 # Machine Learning Engineering Rules
 
 > *"The qualities that in my experience correlate most strongly to success in deep learning are patience and attention to detail."*

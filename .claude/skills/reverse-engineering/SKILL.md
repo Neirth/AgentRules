@@ -1,3 +1,9 @@
+---
+name: reverse-engineering
+description: Apply clean room reverse engineering methodology to analyze external binaries, protocols, or code and produce legally defensible independent implementations using specification-based development
+user-invocable: true
+---
+
 # Clean Room Reverse Engineering Rules
 
 > *"The methodology was bulletproof. IBM never sued Columbia Data Products. They couldn't."*

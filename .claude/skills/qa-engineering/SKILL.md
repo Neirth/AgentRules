@@ -1,3 +1,9 @@
+---
+name: qa-engineering
+description: Apply comprehensive QA engineering practices including TDD, mocking strategies, chaos engineering, and testing methodologies from Netflix, AWS, Google, Microsoft, and industry leaders
+user-invocable: true
+---
+
 # Quality Assurance Engineering Rules
 
 > *"At Google, it's the product teams that own quality, not testers. Every developer is expected to do their own testing."*
