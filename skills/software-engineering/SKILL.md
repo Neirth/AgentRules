@@ -745,6 +745,479 @@ Before abstracting, ask: "Do I have three examples?"
 
 ---
 
+## Documentation Standards
+
+### Mandatory API Documentation
+
+All public functions, methods, classes, and interfaces **MUST** be documented in English using the language-appropriate documentation format. Documentation blocks appear immediately above the code they describe.
+
+```
+┌─────────────────────────────────────────────────────────────────┐
+│              DOCUMENTATION FORMATS BY LANGUAGE                  │
+├─────────────────────────────────────────────────────────────────┤
+│                                                                 │
+│  LANGUAGE          FORMAT              TOOL                     │
+│  ─────────────────────────────────────────────────────────────  │
+│  Java              JavaDoc             javadoc                  │
+│  JavaScript/TS     JSDoc               jsdoc, typedoc           │
+│  Python            Docstrings          Sphinx, pydoc            │
+│  C#                XML Documentation   Sandcastle               │
+│  C/C++             Doxygen             Doxygen                  │
+│  Go                GoDoc               godoc                    │
+│  Rust              Rustdoc             rustdoc (///  or //!)    │
+│  Ruby              YARD/RDoc           yard, rdoc               │
+│  PHP               PHPDoc              phpDocumentor            │
+│  Swift             Swift Markup        Xcode                    │
+│  Kotlin            KDoc                Dokka                    │
+│                                                                 │
+└─────────────────────────────────────────────────────────────────┘
+```
+
+### Documentation Block Structure
+
+Every documented element MUST include:
+
+```
+┌─────────────────────────────────────────────────────────────────┐
+│              REQUIRED DOCUMENTATION ELEMENTS                    │
+├─────────────────────────────────────────────────────────────────┤
+│                                                                 │
+│  1. PURPOSE ───────────────────────────────────────────────     │
+│  │ Brief description of WHAT the function/class does            │
+│  │ • First sentence is the summary (appears in listings)        │
+│  │ • Additional paragraphs for detailed explanation             │
+│  │ • Focus on behavior, not implementation                      │
+│  └─────────────────────────────────────────────────────────     │
+│                                                                 │
+│  2. PARAMETERS (@param) ───────────────────────────────────     │
+│  │ For each input parameter:                                    │
+│  │ • Name and type                                              │
+│  │ • Description of what it represents                          │
+│  │ • Valid ranges or constraints                                │
+│  │ • Default values if applicable                               │
+│  └─────────────────────────────────────────────────────────     │
+│                                                                 │
+│  3. RETURN VALUE (@returns/@return) ───────────────────────     │
+│  │ • Type of the return value                                   │
+│  │ • Description of what is returned                            │
+│  │ • Possible return values/states                              │
+│  │ • null/undefined conditions                                  │
+│  └─────────────────────────────────────────────────────────     │
+│                                                                 │
+│  4. EXCEPTIONS (@throws/@exception) ───────────────────────     │
+│  │ • Exception type                                             │
+│  │ • Conditions that trigger the exception                      │
+│  └─────────────────────────────────────────────────────────     │
+│                                                                 │
+│  5. EXAMPLES (@example) ───────────────────────────────────     │
+│  │ • Usage examples for complex functions                       │
+│  │ • Expected output                                            │
+│  └─────────────────────────────────────────────────────────     │
+│                                                                 │
+└─────────────────────────────────────────────────────────────────┘
+```
+
+### Documentation Examples by Language
+
+```java
+// ═══════════════════════════════════════════════════════════════
+// JAVA (JavaDoc)
+// ═══════════════════════════════════════════════════════════════
+
+/**
+ * Calculates the compound interest for a given principal amount.
+ *
+ * <p>This method uses the standard compound interest formula:
+ * A = P(1 + r/n)^(nt) where A is the final amount.</p>
+ *
+ * @param principal   The initial investment amount in dollars.
+ *                    Must be a positive value.
+ * @param rate        The annual interest rate as a decimal
+ *                    (e.g., 0.05 for 5%).
+ * @param times       Number of times interest is compounded per year.
+ *                    Must be at least 1.
+ * @param years       The investment duration in years.
+ *                    Must be a positive value.
+ * @return            The final amount after compound interest,
+ *                    rounded to 2 decimal places.
+ * @throws IllegalArgumentException if principal, rate, or years
+ *                                  is negative, or if times < 1.
+ * @see #calculateSimpleInterest(double, double, double)
+ * @since 1.0.0
+ */
+public double calculateCompoundInterest(
+    double principal,
+    double rate,
+    int times,
+    double years
+) {
+    // Implementation
+}
+```
+
+```javascript
+// ═══════════════════════════════════════════════════════════════
+// JAVASCRIPT/TYPESCRIPT (JSDoc)
+// ═══════════════════════════════════════════════════════════════
+
+/**
+ * Fetches user data from the API and transforms it for display.
+ *
+ * Makes an authenticated request to the user endpoint and maps
+ * the response to the internal User model format.
+ *
+ * @async
+ * @param {string} userId - The unique identifier of the user.
+ * @param {Object} [options] - Optional configuration.
+ * @param {boolean} [options.includeProfile=false] - Include extended profile.
+ * @param {string[]} [options.fields] - Specific fields to retrieve.
+ * @returns {Promise<User>} The user object with requested data.
+ * @throws {NotFoundError} If the user does not exist.
+ * @throws {AuthenticationError} If the request is not authenticated.
+ * @example
+ * // Basic usage
+ * const user = await fetchUser('usr_123');
+ *
+ * @example
+ * // With options
+ * const user = await fetchUser('usr_123', {
+ *   includeProfile: true,
+ *   fields: ['name', 'email']
+ * });
+ */
+async function fetchUser(userId, options = {}) {
+    // Implementation
+}
+```
+
+```python
+# ═══════════════════════════════════════════════════════════════
+# PYTHON (Docstrings - Google Style)
+# ═══════════════════════════════════════════════════════════════
+
+def process_transaction(
+    account_id: str,
+    amount: Decimal,
+    transaction_type: TransactionType,
+    metadata: dict[str, Any] | None = None
+) -> TransactionResult:
+    """Process a financial transaction on the specified account.
+
+    Validates the transaction, applies business rules, and persists
+    the result to the database. Sends notifications on success.
+
+    Args:
+        account_id: The unique identifier of the target account.
+            Must be a valid UUID string.
+        amount: The transaction amount. Must be positive for credits,
+            negative for debits.
+        transaction_type: The type of transaction (DEPOSIT, WITHDRAWAL,
+            TRANSFER).
+        metadata: Optional key-value pairs for additional transaction
+            context. Defaults to None.
+
+    Returns:
+        TransactionResult containing the transaction ID, new balance,
+        and timestamp.
+
+    Raises:
+        AccountNotFoundError: If account_id doesn't match any account.
+        InsufficientFundsError: If withdrawal exceeds available balance.
+        ValidationError: If amount is zero or transaction_type invalid.
+
+    Example:
+        >>> result = process_transaction(
+        ...     account_id="acc_123",
+        ...     amount=Decimal("100.00"),
+        ...     transaction_type=TransactionType.DEPOSIT
+        ... )
+        >>> print(result.new_balance)
+        Decimal('1100.00')
+    """
+    # Implementation
+```
+
+```go
+// ═══════════════════════════════════════════════════════════════
+// GO (GoDoc)
+// ═══════════════════════════════════════════════════════════════
+
+// ProcessOrder validates and processes a customer order.
+//
+// It performs inventory checks, calculates totals including tax,
+// and reserves items for fulfillment. The order is persisted
+// in a pending state until payment confirmation.
+//
+// Parameters:
+//   - ctx: Context for cancellation and deadline propagation.
+//   - order: The order to process, must have at least one item.
+//
+// Returns the processed order with calculated totals and order ID,
+// or an error if validation fails or inventory is insufficient.
+//
+// Example:
+//
+//	order := &Order{CustomerID: "cust_123", Items: items}
+//	processed, err := ProcessOrder(ctx, order)
+//	if err != nil {
+//	    log.Fatal(err)
+//	}
+//	fmt.Printf("Order %s total: $%.2f\n", processed.ID, processed.Total)
+func ProcessOrder(ctx context.Context, order *Order) (*ProcessedOrder, error) {
+    // Implementation
+}
+```
+
+```rust
+// ═══════════════════════════════════════════════════════════════
+// RUST (Rustdoc)
+// ═══════════════════════════════════════════════════════════════
+
+/// Parses a configuration file and returns the application settings.
+///
+/// Reads the TOML configuration file at the specified path and
+/// deserializes it into a `Config` struct. Environment variable
+/// overrides are applied after file parsing.
+///
+/// # Arguments
+///
+/// * `path` - Path to the configuration file. Supports absolute
+///   and relative paths.
+///
+/// # Returns
+///
+/// Returns `Ok(Config)` with the parsed configuration on success,
+/// or `Err(ConfigError)` if the file cannot be read or parsed.
+///
+/// # Errors
+///
+/// This function will return an error if:
+/// * The file does not exist (`ConfigError::NotFound`)
+/// * The file cannot be read (`ConfigError::IoError`)
+/// * The TOML is malformed (`ConfigError::ParseError`)
+///
+/// # Examples
+///
+/// ```
+/// use myapp::config::parse_config;
+///
+/// let config = parse_config("config.toml")?;
+/// println!("Server port: {}", config.server.port);
+/// ```
+pub fn parse_config(path: &str) -> Result<Config, ConfigError> {
+    // Implementation
+}
+```
+
+### Self-Documenting Code Principles
+
+Documentation complements—but does not replace—readable code:
+
+```
+┌─────────────────────────────────────────────────────────────────┐
+│              SELF-DOCUMENTING CODE                              │
+├─────────────────────────────────────────────────────────────────┤
+│                                                                 │
+│  NAMING ───────────────────────────────────────────────────     │
+│  │ ✗ int d;           // elapsed time in days                   │
+│  │ ✓ int elapsedDays;                                           │
+│  │                                                              │
+│  │ ✗ getUserInfo()    // What info?                             │
+│  │ ✓ getUserProfile()                                           │
+│  │                                                              │
+│  │ ✗ process()        // Process what?                          │
+│  │ ✓ validateAndPersistOrder()                                  │
+│  └─────────────────────────────────────────────────────────     │
+│                                                                 │
+│  FUNCTIONS ────────────────────────────────────────────────     │
+│  │ • Name describes the action performed                        │
+│  │ • Parameters have descriptive names                          │
+│  │ • Return type indicates result                               │
+│  │ • Single responsibility (one reason to change)               │
+│  └─────────────────────────────────────────────────────────     │
+│                                                                 │
+│  CONSTANTS ────────────────────────────────────────────────     │
+│  │ ✗ if (status == 3)                                           │
+│  │ ✓ if (status == OrderStatus.SHIPPED)                         │
+│  │                                                              │
+│  │ ✗ setTimeout(fn, 86400000)                                   │
+│  │ ✓ setTimeout(fn, Duration.days(1).toMillis())                │
+│  └─────────────────────────────────────────────────────────     │
+│                                                                 │
+│  STRUCTURE ────────────────────────────────────────────────     │
+│  │ • Related code grouped together                              │
+│  │ • Logical flow from top to bottom                            │
+│  │ • Consistent formatting and indentation                      │
+│  │ • Small, focused modules                                     │
+│  └─────────────────────────────────────────────────────────     │
+│                                                                 │
+│  COMMENTS: WHEN TO USE ────────────────────────────────────     │
+│  │ ✓ WHY (intent, business context, non-obvious decisions)      │
+│  │ ✓ WARNING (edge cases, gotchas, workarounds)                 │
+│  │ ✓ TODO (temporary, tracked in issue system)                  │
+│  │ ✗ WHAT (the code already says what it does)                  │
+│  │ ✗ HOW (if unclear, refactor the code)                        │
+│  └─────────────────────────────────────────────────────────     │
+│                                                                 │
+└─────────────────────────────────────────────────────────────────┘
+```
+
+### License Headers
+
+**Every new source code file MUST include a license header** referencing the project's `LICENSE` or `LICENSE.md` file at the repository root.
+
+```
+┌─────────────────────────────────────────────────────────────────┐
+│              LICENSE HEADER REQUIREMENTS                        │
+├─────────────────────────────────────────────────────────────────┤
+│                                                                 │
+│  PLACEMENT:                                                     │
+│  • First lines of every new source file                         │
+│  • After shebang (#!) if present                                │
+│  • Before any code or imports                                   │
+│                                                                 │
+│  CONTENT:                                                       │
+│  • Reference to LICENSE/LICENSE.md at project root              │
+│  • Copyright notice with year and holder                        │
+│  • SPDX identifier (recommended)                                │
+│                                                                 │
+│  BEFORE CREATING A NEW FILE:                                    │
+│  1. Check for LICENSE or LICENSE.md at project root             │
+│  2. Identify the license type (MIT, Apache 2.0, GPL, etc.)      │
+│  3. Use appropriate header format for that license              │
+│                                                                 │
+└─────────────────────────────────────────────────────────────────┘
+```
+
+### License Header Examples
+
+```java
+// ═══════════════════════════════════════════════════════════════
+// MIT License
+// ═══════════════════════════════════════════════════════════════
+
+/*
+ * SPDX-License-Identifier: MIT
+ *
+ * Copyright (c) 2024 [Copyright Holder]
+ *
+ * This file is part of [Project Name].
+ * See LICENSE file in the project root for full license information.
+ */
+package com.example.app;
+```
+
+```python
+# ═══════════════════════════════════════════════════════════════
+# Apache 2.0 License
+# ═══════════════════════════════════════════════════════════════
+
+# SPDX-License-Identifier: Apache-2.0
+#
+# Copyright 2024 [Copyright Holder]
+#
+# Licensed under the Apache License, Version 2.0 (the "License");
+# you may not use this file except in compliance with the License.
+# You may obtain a copy of the License at
+#
+#     http://www.apache.org/licenses/LICENSE-2.0
+#
+# Unless required by applicable law or agreed to in writing, software
+# distributed under the License is distributed on an "AS IS" BASIS,
+# WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+# See the License for the specific language governing permissions and
+# limitations under the License.
+
+"""Module docstring here."""
+```
+
+```javascript
+// ═══════════════════════════════════════════════════════════════
+// GPL-3.0 License
+// ═══════════════════════════════════════════════════════════════
+
+/**
+ * SPDX-License-Identifier: GPL-3.0-or-later
+ *
+ * Copyright (C) 2024 [Copyright Holder]
+ *
+ * This program is free software: you can redistribute it and/or modify
+ * it under the terms of the GNU General Public License as published by
+ * the Free Software Foundation, either version 3 of the License, or
+ * (at your option) any later version.
+ *
+ * This program is distributed in the hope that it will be useful,
+ * but WITHOUT ANY WARRANTY; without even the implied warranty of
+ * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the
+ * GNU General Public License for more details.
+ *
+ * You should have received a copy of the GNU General Public License
+ * along with this program. If not, see <https://www.gnu.org/licenses/>.
+ */
+
+'use strict';
+```
+
+```rust
+// ═══════════════════════════════════════════════════════════════
+// BSD-3-Clause License
+// ═══════════════════════════════════════════════════════════════
+
+// SPDX-License-Identifier: BSD-3-Clause
+//
+// Copyright (c) 2024, [Copyright Holder]
+// All rights reserved.
+//
+// See LICENSE file in the project root for full license terms.
+
+//! Module documentation here.
+```
+
+```go
+// ═══════════════════════════════════════════════════════════════
+// Minimal Header (when LICENSE file is comprehensive)
+// ═══════════════════════════════════════════════════════════════
+
+// SPDX-License-Identifier: MIT
+// Copyright (c) 2024 [Copyright Holder]
+// See LICENSE for license information.
+
+package main
+```
+
+### Documentation Checklist
+
+```
+┌─────────────────────────────────────────────────────────────────┐
+│              DOCUMENTATION CHECKLIST                            │
+├─────────────────────────────────────────────────────────────────┤
+│                                                                 │
+│  FOR EVERY PUBLIC API:                                          │
+│  [ ] Documentation block present                                │
+│  [ ] Written in English                                         │
+│  [ ] Purpose clearly described                                  │
+│  [ ] All parameters documented with types                       │
+│  [ ] Return value documented                                    │
+│  [ ] Exceptions/errors documented                               │
+│  [ ] Examples for complex functions                             │
+│                                                                 │
+│  FOR EVERY NEW FILE:                                            │
+│  [ ] License header present                                     │
+│  [ ] References LICENSE/LICENSE.md at project root              │
+│  [ ] Copyright year and holder correct                          │
+│  [ ] SPDX identifier included (recommended)                     │
+│                                                                 │
+│  FOR CODE READABILITY:                                          │
+│  [ ] Names are intention-revealing                              │
+│  [ ] No magic numbers (use named constants)                     │
+│  [ ] Comments explain "why", not "what"                         │
+│  [ ] Complex logic has explanatory comments                     │
+│                                                                 │
+└─────────────────────────────────────────────────────────────────┘
+```
+
+---
+
 ## Checklist
 
 ### Before Writing Code
