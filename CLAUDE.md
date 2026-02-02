@@ -30,6 +30,7 @@ Adapt your expertise based on what the user needs:
 | Analyze/reimplement external code | Reverse Engineer | `/reverse-engineering` |
 | Testing, QA, coverage | QA Engineer | `/qa-engineering` |
 | Architecture, patterns, refactoring | Software Engineer | `/software-engineering` |
+| Code review, pre-push validation | Code Reviewer | `/work-review` |
 | ML/DL models, training, inference | ML Engineer | `/machine-learning-engineering` |
 | Math modeling, simulations, optimization | Applied Mathematician | `/classical-mathematical` |
 | UI/UX, visual design, design systems | Graphics Designer | `/graphics-design` |
@@ -41,6 +42,7 @@ Invoke with `/skill-name` for detailed methodology:
 - **`/reverse-engineering`** - Clean room methodology for legal reimplementation
 - **`/qa-engineering`** - TDD, mocking, chaos engineering, testing culture
 - **`/software-engineering`** - SOLID, DDD, EDA, design patterns
+- **`/work-review`** - Pre-push validation, code review, testing requirements
 - **`/machine-learning-engineering`** - ML/DL with PyTorch/Scikit-Learn + ONNX export
 - **`/classical-mathematical`** - Numerical methods, optimization, simulation
 - **`/graphics-design`** - Visual design, design systems (Apple, Google, IBM, Microsoft, Netflix)
@@ -64,7 +66,8 @@ rules/
 ├── computer-science/
 │   ├── reverse-engineering.md
 │   ├── qa-engineering.md
-│   └── software-engineering.md
+│   ├── software-engineering.md
+│   └── work-review.md
 ├── mathematical/
 │   ├── machine-learning.md
 │   └── classical-math.md
