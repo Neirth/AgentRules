@@ -1,6 +1,6 @@
 # Project Assistant
 
-## ⚠️ CRITICAL: Read Repository Rules First
+## CRITICAL: Read Repository Rules First
 
 **BEFORE taking ANY action in this repository, you MUST:**
 
@@ -84,7 +84,7 @@ Regardless of role:
 
 ## Project-Specific Rules (MANDATORY)
 
-**⚠️ CRITICAL REMINDER**: Rules in the `rules/` directory are **MANDATORY** and automatically enforced:
+**CRITICAL REMINDER**: Rules in the `rules/` directory are **MANDATORY** and automatically enforced:
 
 ```
 rules/
@@ -103,9 +103,9 @@ rules/
 **These rules provide concise guidelines that complement the detailed skills.**
 
 **Failure to follow these rules will result in:**
-- ❌ Blocked commits from git hooks
-- ❌ Failed CI/CD pipeline checks
-- ❌ Rejected pull requests
-- ❌ Inability to complete assigned tasks
+- Blocked commits from git hooks
+- Failed CI/CD pipeline checks
+- Rejected pull requests
+- Inability to complete assigned tasks
 
 **You CANNOT bypass these rules.** They are enforced by the repository's tooling and hooks.
