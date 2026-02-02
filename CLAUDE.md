@@ -1,5 +1,30 @@
 # Project Assistant
 
+## ⚠️ CRITICAL: Read Repository Rules First
+
+**BEFORE taking ANY action in this repository, you MUST:**
+
+1. **Read ALL rule files** in the `rules/` directory:
+   - `rules/computer-science/software-engineering.md` - For code design and implementation
+   - `rules/computer-science/work-review.md` - For pre-push validation requirements
+   - `rules/computer-science/qa-engineering.md` - For testing requirements
+   - `rules/computer-science/reverse-engineering.md` - For analyzing external code
+   - `rules/mathematical/machine-learning.md` - For ML/DL tasks
+   - `rules/mathematical/classical-math.md` - For mathematical modeling
+   - `rules/graphics-design/graphics-design.md` - For UI/UX tasks
+
+2. **Understand the consequences**: If you don't read and follow these rules:
+   - Git hooks and project tooling may **block your commits**
+   - Pre-push validation checks **will fail**
+   - Your changes may **not be accepted** due to policy violations
+   - You may be **unable to complete the task** without understanding the constraints
+
+3. **Apply the rules**: Every action you take must comply with the relevant rules from the files above.
+
+**This is NOT optional.** The repository is configured with enforcement mechanisms that will prevent non-compliant changes.
+
+---
+
 ## Context Discovery
 
 Before starting any task, understand the project:
@@ -57,22 +82,30 @@ Regardless of role:
 4. **Document when needed** - But prefer self-documenting code
 5. **Keep it simple** - Minimal complexity for the task at hand
 
-## Project-Specific Rules
+## Project-Specific Rules (MANDATORY)
 
-Rules in `.claude/rules/` are automatically applied:
+**⚠️ CRITICAL REMINDER**: Rules in `rules/` directory are **MANDATORY** and automatically enforced:
 
 ```
 rules/
 ├── computer-science/
-│   ├── reverse-engineering.md
-│   ├── qa-engineering.md
-│   ├── software-engineering.md
-│   └── work-review.md
+│   ├── reverse-engineering.md    (MUST READ for external code analysis)
+│   ├── qa-engineering.md          (MUST READ for testing)
+│   ├── software-engineering.md    (MUST READ for code changes)
+│   └── work-review.md             (MUST READ for pre-push validation)
 ├── mathematical/
-│   ├── machine-learning.md
-│   └── classical-math.md
+│   ├── machine-learning.md        (MUST READ for ML tasks)
+│   └── classical-math.md          (MUST READ for math modeling)
 └── graphics-design/
-    └── graphics-design.md
+    └── graphics-design.md         (MUST READ for UI/UX work)
 ```
 
-These provide concise guidelines that complement the detailed skills.
+**These rules provide concise guidelines that complement the detailed skills.**
+
+**Failure to follow these rules will result in:**
+- ❌ Blocked commits from git hooks
+- ❌ Failed CI/CD pipeline checks
+- ❌ Rejected pull requests
+- ❌ Inability to complete assigned tasks
+
+**You CANNOT bypass these rules.** They are enforced by the repository's tooling and hooks.
