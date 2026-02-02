@@ -47,4 +47,11 @@ Before requesting review:
 - Respond to feedback constructively
 - Re-test after addressing comments
 
+## Documentation Quality
+
+- Professional tone and clarity
+- No emojis in documentation or code comments
+- English language for all documentation
+- Self-documenting code preferred over excessive comments
+
 **For detailed methodology:** Use `/work-review` skill

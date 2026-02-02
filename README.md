@@ -4,7 +4,7 @@
 
 AgentRules is a curated collection of domain-specific rules and skills designed to enhance Claude's capabilities across software engineering, mathematics, and design disciplines. Think of it as the `.claude` configuration for any project that wants to leverage specialized AI assistance.
 
-## 🎯 Philosophy
+## Philosophy
 
 ### Context-Aware Intelligence
 
@@ -25,7 +25,7 @@ Each skill and rule set in this repository represents distilled knowledge from:
 - **Foundational Works**: Gang of Four (Design Patterns), Robert C. Martin (Clean Code/SOLID), Eric Evans (Domain-Driven Design)
 - **Modern Standards**: TDD, Event-Driven Architecture, Machine Learning best practices
 
-## 📁 Repository Structure
+## Repository Structure
 
 ```
 AgentRules/
@@ -59,7 +59,7 @@ AgentRules/
 - **Rules** (`rules/`): Quick-reference guidelines automatically loaded for every task. Concise, practical, immediately applicable.
 - **Skills** (`skills/`): Deep-dive methodologies invoked on-demand with `/skill-name`. Comprehensive workflows, patterns, and best practices.
 
-## 🚀 How to Use
+## How to Use
 
 ### Option 1: Git Submodule (Recommended)
 
@@ -104,7 +104,7 @@ Once integrated, invoke skills by referencing them in your conversation with Cla
 
 Skills can also be invoked through natural language that clearly indicates the need for that expertise (e.g., "review my code before pushing" will engage `/work-review`).
 
-## 🎓 Available Expertise
+## Available Expertise
 
 ### Computer Science
 
@@ -128,7 +128,7 @@ Skills can also be invoked through natural language that clearly indicates the n
 |-------|-----------|----------|
 | **Graphics Design** | `/graphics-design` | UI/UX, design systems (Apple, Google, IBM, Microsoft, Netflix) |
 
-## 🔧 Configuration
+## Configuration
 
 ### MCP Servers
 
@@ -140,7 +140,7 @@ AgentRules includes optional MCP (Model Context Protocol) server configurations 
 
 These are optional and can be customized based on your project needs.
 
-## 🤝 Contributing
+## Contributing
 
 AgentRules is designed to be a living repository of best practices. Contributions are welcome for:
 
@@ -155,11 +155,11 @@ Please ensure contributions:
 - Reference authoritative sources where applicable
 - Are tested with real-world Claude interactions
 
-## 📄 License
+## License
 
 This repository is designed to enhance AI-assisted development. Please check individual files for specific licensing information.
 
-## 🌟 Why AgentRules?
+## Why AgentRules?
 
 Traditional AI assistants provide general-purpose help. AgentRules transforms Claude into a **specialist on-demand**:
 
