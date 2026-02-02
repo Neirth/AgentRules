@@ -29,7 +29,6 @@ Each skill and rule set in this repository represents distilled knowledge from:
 
 ```
 AgentRules/
-├── .claude/                    # Symlink to AgentRules (for .claude compatibility)
 ├── CLAUDE.md                   # Main instruction file for Claude
 ├── .mcp.json                   # MCP server configurations
 ├── rules/                      # Concise, actionable guidelines
@@ -52,6 +51,8 @@ AgentRules/
     ├── classical-mathematical/
     └── graphics-design/
 ```
+
+**Note**: When integrated into your project, this repository becomes your `.claude/` directory, making all rules and skills available to Claude.
 
 ### Rules vs Skills
 
