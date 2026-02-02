@@ -5,10 +5,10 @@
 **BEFORE taking ANY action in this repository, you MUST:**
 
 1. **Read ALL rule files** in the `rules/` directory:
+   - `rules/computer-science/reverse-engineering.md` - For analyzing external code
+   - `rules/computer-science/qa-engineering.md` - For testing requirements
    - `rules/computer-science/software-engineering.md` - For code design and implementation
    - `rules/computer-science/work-review.md` - For pre-push validation requirements
-   - `rules/computer-science/qa-engineering.md` - For testing requirements
-   - `rules/computer-science/reverse-engineering.md` - For analyzing external code
    - `rules/mathematical/machine-learning.md` - For ML/DL tasks
    - `rules/mathematical/classical-math.md` - For mathematical modeling
    - `rules/graphics-design/graphics-design.md` - For UI/UX tasks
@@ -84,7 +84,7 @@ Regardless of role:
 
 ## Project-Specific Rules (MANDATORY)
 
-**⚠️ CRITICAL REMINDER**: Rules in `rules/` directory are **MANDATORY** and automatically enforced:
+**⚠️ CRITICAL REMINDER**: Rules in the `rules/` directory are **MANDATORY** and automatically enforced:
 
 ```
 rules/
