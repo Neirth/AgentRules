@@ -32,6 +32,8 @@ AgentRules/
 ├── CLAUDE.md                   # Main instruction file for Claude
 ├── .mcp.json                   # MCP server configurations
 ├── rules/                      # Concise, actionable guidelines
+│   ├── engineering/
+│   │   └── general-engineering.md
 │   ├── computer-science/
 │   │   ├── reverse-engineering.md
 │   │   ├── qa-engineering.md
@@ -43,6 +45,7 @@ AgentRules/
 │   └── graphics-design/
 │       └── graphics-design.md
 └── skills/                     # Detailed methodologies and workflows
+    ├── general-engineering/
     ├── reverse-engineering/
     ├── qa-engineering/
     ├── software-engineering/
@@ -97,7 +100,8 @@ cp path/to/AgentRules/rules/computer-science/software-engineering.md .claude/rul
 Once integrated, invoke skills by referencing them in your conversation with Claude using the `/skill-name` syntax. This instructs Claude to load the detailed methodology for that domain:
 
 ```
-"Use /software-engineering to refactor this code following SOLID principles"
+"Use /general-engineering to apply first principles analysis to this design"
+"Apply /software-engineering to refactor this code following SOLID principles"
 "Apply /qa-engineering to add comprehensive tests for this module"
 "Use /reverse-engineering to analyze and reimplement this external library"
 ```
@@ -105,6 +109,12 @@ Once integrated, invoke skills by referencing them in your conversation with Cla
 Skills can also be invoked through natural language that clearly indicates the need for that expertise (e.g., "review my code before pushing" will engage `/work-review`).
 
 ## Available Expertise
+
+### Engineering Fundamentals
+
+| Skill | Invocation | Use Case |
+|-------|-----------|----------|
+| **General Engineering** | `/general-engineering` | Universal engineering principles, first principles thinking, problem-solving methodology, professional practice (applicable to all engineering disciplines) |
 
 ### Computer Science
 
