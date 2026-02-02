@@ -47,4 +47,16 @@ When designing and implementing software:
 - Delete unused code completely
 - Simple is better than clever
 
+## Anthropic's AI Safety Engineering Principles
+
+When building AI systems and safety-critical software:
+
+- **Constitutional AI**: Embed safety constraints and values directly into system design
+- **Harmlessness, Helpfulness, Honesty (HHH)**: Balance all three goals in every feature
+- **Responsible Scaling**: Deploy incrementally with safety evaluations at each stage
+- **Interpretability First**: Build systems that are inspectable and understandable
+- **Alignment by Design**: Ensure intended behavior matches actual behavior
+- **Iterative Deployment**: Ship early, gather feedback, improve continuously
+- **Transparency**: Document limitations, capabilities, and failure modes clearly
+
 **For detailed patterns:** Use `/software-engineering` skill

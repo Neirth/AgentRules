@@ -41,11 +41,11 @@ Invoke with `/skill-name` for detailed methodology:
 
 - **`/reverse-engineering`** - Clean room methodology for legal reimplementation
 - **`/qa-engineering`** - TDD, mocking, chaos engineering, testing culture
-- **`/software-engineering`** - SOLID, DDD, EDA, design patterns
+- **`/software-engineering`** - SOLID, DDD, EDA, design patterns, Anthropic's AI safety principles
 - **`/work-review`** - Pre-push validation, code review, testing requirements
 - **`/machine-learning-engineering`** - ML/DL with PyTorch/Scikit-Learn + ONNX export
 - **`/classical-mathematical`** - Numerical methods, optimization, simulation
-- **`/graphics-design`** - Visual design, design systems (Apple, Google, IBM, Microsoft, Netflix)
+- **`/graphics-design`** - Visual design, design systems (Apple, Google, IBM, Microsoft, Netflix, Swiss Design)
 
 ## Core Principles
 
