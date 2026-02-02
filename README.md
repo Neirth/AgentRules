@@ -147,7 +147,6 @@ AgentRules is designed to be a living repository of best practices. Contribution
 - New domain-specific rules and skills
 - Updates to existing methodologies
 - Corrections and clarifications
-- Additional MCP server integrations
 
 Please ensure contributions:
 - Follow the existing structure (rules/ vs skills/)
