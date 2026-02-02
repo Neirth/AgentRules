@@ -56,6 +56,7 @@ Regardless of role:
 3. **Test your changes** - Verify nothing breaks
 4. **Document when needed** - But prefer self-documenting code
 5. **Keep it simple** - Minimal complexity for the task at hand
+6. **No emojis in documentation** - Keep all documentation professional and text-only
 
 ## Project-Specific Rules
 

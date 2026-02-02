@@ -39,6 +39,7 @@ When designing and implementing software:
 - **Content**: Purpose, @param (inputs), @returns (output), @throws (errors)
 - **License Header**: Every new file must include license header referencing LICENSE/LICENSE.md
 - **Self-documenting code**: Names should reveal intent; minimize need for comments
+- **No emojis**: Keep all documentation professional and text-only
 
 ## Avoid Over-Engineering
 
