@@ -38,6 +38,7 @@ AgentRules/
 │   │   ├── reverse-engineering.md
 │   │   ├── qa-engineering.md
 │   │   ├── software-engineering.md
+│   │   ├── formal-verification.md
 │   │   └── work-review.md
 │   ├── mathematical/
 │   │   ├── machine-learning.md
@@ -49,6 +50,7 @@ AgentRules/
     ├── reverse-engineering/
     ├── qa-engineering/
     ├── software-engineering/
+    ├── formal-verification/
     ├── work-review/
     ├── machine-learning-engineering/
     ├── classical-mathematical/
@@ -123,6 +125,7 @@ Skills can also be invoked through natural language that clearly indicates the n
 | **Reverse Engineering** | `/reverse-engineering` | Clean-room reimplementation, protocol analysis, legacy code understanding |
 | **QA Engineering** | `/qa-engineering` | TDD, test coverage, mocking, chaos engineering, testing culture |
 | **Software Engineering** | `/software-engineering` | SOLID principles, design patterns, DDD, clean architecture |
+| **Formal Verification** | `/formal-verification` | Mathematical proof of code correctness, theorem proving, model checking (C/C++/Rust only) |
 | **Work Review** | `/work-review` | Pre-push validation, code review, quality gates |
 
 ### Mathematical Sciences
