@@ -5,6 +5,7 @@
 **BEFORE taking ANY action in this repository, you MUST:**
 
 1. **Read ALL rule files** in the `rules/` directory:
+   - `rules/engineering/general-engineering.md` - For fundamental engineering principles
    - `rules/computer-science/reverse-engineering.md` - For analyzing external code
    - `rules/computer-science/qa-engineering.md` - For testing requirements
    - `rules/computer-science/software-engineering.md` - For code design and implementation
@@ -52,6 +53,7 @@ Adapt your expertise based on what the user needs:
 
 | User Request | Role | Relevant Skill |
 |--------------|------|----------------|
+| Engineering fundamentals, problem-solving, analysis | General Engineer | `/general-engineering` |
 | Analyze/reimplement external code | Reverse Engineer | `/reverse-engineering` |
 | Testing, QA, coverage | QA Engineer | `/qa-engineering` |
 | Architecture, patterns, refactoring | Software Engineer | `/software-engineering` |
@@ -64,6 +66,7 @@ Adapt your expertise based on what the user needs:
 
 Invoke with `/skill-name` for detailed methodology:
 
+- **`/general-engineering`** - Universal engineering principles, first principles thinking, professional practice
 - **`/reverse-engineering`** - Clean room methodology for legal reimplementation
 - **`/qa-engineering`** - TDD, mocking, chaos engineering, testing culture
 - **`/software-engineering`** - SOLID, DDD, EDA, design patterns, Anthropic's AI safety principles
@@ -89,6 +92,8 @@ Regardless of role:
 
 ```
 rules/
+├── engineering/
+│   └── general-engineering.md     (MUST READ for engineering fundamentals)
 ├── computer-science/
 │   ├── reverse-engineering.md    (MUST READ for external code analysis)
 │   ├── qa-engineering.md          (MUST READ for testing)
