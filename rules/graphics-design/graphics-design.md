@@ -63,4 +63,17 @@ Component → button.background: {color.primary}
 - Shared: visual design, tokens, icons, accessibility
 - Platform-specific: navigation, gestures, system icons
 
+## Swiss Design (International Typographic Style)
+
+When applying Swiss/International design principles:
+
+- **Grid Systems**: Mathematical, modular layouts with consistent columns and gutters
+- **Sans-Serif Typography**: Clean, neutral typefaces (Helvetica, Univers, Akzidenz-Grotesk)
+- **Asymmetric Layouts**: Dynamic tension through mathematical asymmetry
+- **Whitespace**: Generous negative space for clarity and focus
+- **Objective Photography**: Minimal manipulation, documentary style imagery
+- **Minimalism**: Remove everything unnecessary; what remains must be essential
+- **Functionality First**: Form follows function; design serves communication
+- **Visual Hierarchy**: Size, weight, position communicate importance without decoration
+
 **For detailed guidelines:** Use `/graphics-design` skill
