@@ -145,13 +145,50 @@ Skills can also be invoked through natural language that clearly indicates the n
 
 ### MCP Servers
 
-AgentRules includes optional MCP (Model Context Protocol) server configurations in `.mcp.json` for enhanced capabilities:
+AgentRules includes MCP (Model Context Protocol) server configurations in `.mcp.json` for enhanced capabilities:
 
-- **chrome-devtools**: Browser automation and testing
-- **docker**: Container management
-- **expo**: React Native development
+#### Currently Configured MCPs
 
-These are optional and can be customized based on your project needs.
+| MCP Server | Type | Purpose | Configuration |
+| --- | --- | --- | --- |
+| **maestro_testing** | Local (STDIO) | Mobile app testing automation | `command: maestro` with `mcp` args |
+| **docker_infrastructure** | Local (Docker) | Container management, logs, service control | Docker daemon socket mounted at `/var/run/docker.sock` |
+| **stitch_graphics** | Remote (HTTP + mcp-remote) | Google Stitch graphics & design services | OAuth-enabled via `mcp-remote` bridge |
+
+#### Setup Instructions
+
+##### Docker Infrastructure
+
+The Docker MCP requires access to your Docker daemon:
+
+```bash
+# Ensure Docker socket is accessible
+ls -la /var/run/docker.sock
+
+# If permission denied, add your user to docker group
+sudo usermod -aG docker $USER
+newgrp docker
+```
+
+##### Stitch Graphics (Remote Server)
+
+Set your API key as an environment variable:
+
+```bash
+export STITCH_API_KEY="your-api-key-here"
+
+# Or add to ~/.zshrc for persistence
+echo 'export STITCH_API_KEY="your-api-key-here"' >> ~/.zshrc
+source ~/.zshrc
+```
+
+The `mcp-remote` wrapper automatically:
+
+- Manages OAuth flows and token storage in `~/.mcp-auth/`
+- Handles credential refresh
+- Provides secure header injection (`X-Goog-Api-Key`)
+
+Then set required environment variables before launching Claude/Cursor.
 
 ## Contributing
 
@@ -162,6 +199,7 @@ AgentRules is designed to be a living repository of best practices. Contribution
 - Corrections and clarifications
 
 Please ensure contributions:
+
 - Follow the existing structure (rules/ vs skills/)
 - Include clear, actionable guidance
 - Reference authoritative sources where applicable

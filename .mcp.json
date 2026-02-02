@@ -1,27 +1,34 @@
 {
   "mcpServers": {
-    "chrome-devtools": {
-      "command": "npx",
+    "maestro_testing": {
+      "command": "maestro",
       "args": [
-        "-y",
-        "chrome-devtools-mcp@latest"
+        "mcp"
       ]
     },
-    "docker": {
+    "docker_infrastructure": {
       "command": "docker",
       "args": [
         "run",
         "-i",
         "--rm",
+        "-v",
+        "/var/run/docker.sock:/var/run/docker.sock",
         "mcp/docker"
       ]
     },
-    "expo": {
+    "stitch_graphics": {
       "command": "npx",
       "args": [
         "-y",
-        "@expo/mcp-server"
-      ]
+        "mcp-remote",
+        "https://stitch.googleapis.com/mcp",
+        "--header",
+        "X-Goog-Api-Key:${STITCH_API_KEY}"
+      ],
+      "env": {
+        "STITCH_API_KEY": "${STITCH_API_KEY}"
+      }
     }
   }
 }
