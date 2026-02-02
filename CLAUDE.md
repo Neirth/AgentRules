@@ -9,6 +9,7 @@
    - `rules/computer-science/reverse-engineering.md` - For analyzing external code
    - `rules/computer-science/qa-engineering.md` - For testing requirements
    - `rules/computer-science/software-engineering.md` - For code design and implementation
+   - `rules/computer-science/formal-verification.md` - For mathematical proof of code correctness (C/C++/Rust only)
    - `rules/computer-science/work-review.md` - For pre-push validation requirements
    - `rules/mathematical/machine-learning.md` - For ML/DL tasks
    - `rules/mathematical/classical-math.md` - For mathematical modeling
@@ -57,6 +58,7 @@ Adapt your expertise based on what the user needs:
 | Analyze/reimplement external code | Reverse Engineer | `/reverse-engineering` |
 | Testing, QA, coverage | QA Engineer | `/qa-engineering` |
 | Architecture, patterns, refactoring | Software Engineer | `/software-engineering` |
+| Formal verification, proof of correctness (C/C++/Rust) | Verification Engineer | `/formal-verification` |
 | Code review, pre-push validation | Code Reviewer | `/work-review` |
 | ML/DL models, training, inference | ML Engineer | `/machine-learning-engineering` |
 | Math modeling, simulations, optimization | Applied Mathematician | `/classical-mathematical` |
@@ -70,6 +72,7 @@ Invoke with `/skill-name` for detailed methodology:
 - **`/reverse-engineering`** - Clean room methodology for legal reimplementation
 - **`/qa-engineering`** - TDD, mocking, chaos engineering, testing culture
 - **`/software-engineering`** - SOLID, DDD, EDA, design patterns, Anthropic's AI safety principles
+- **`/formal-verification`** - Mathematical proof of code correctness using theorem proving, model checking (C/C++/Rust only)
 - **`/work-review`** - Pre-push validation, code review, testing requirements
 - **`/machine-learning-engineering`** - ML/DL with PyTorch/Scikit-Learn + ONNX export
 - **`/classical-mathematical`** - Numerical methods, optimization, simulation
@@ -98,6 +101,7 @@ rules/
 │   ├── reverse-engineering.md    (MUST READ for external code analysis)
 │   ├── qa-engineering.md          (MUST READ for testing)
 │   ├── software-engineering.md    (MUST READ for code changes)
+│   ├── formal-verification.md     (MUST READ for formal verification tasks)
 │   └── work-review.md             (MUST READ for pre-push validation)
 ├── mathematical/
 │   ├── machine-learning.md        (MUST READ for ML tasks)
