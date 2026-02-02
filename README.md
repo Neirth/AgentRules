@@ -94,13 +94,15 @@ cp path/to/AgentRules/rules/computer-science/software-engineering.md .claude/rul
 
 ### Using Skills
 
-Once integrated, invoke skills by mentioning them in your conversation with Claude:
+Once integrated, invoke skills by referencing them in your conversation with Claude using the `/skill-name` syntax. This instructs Claude to load the detailed methodology for that domain:
 
 ```
 "Use /software-engineering to refactor this code following SOLID principles"
 "Apply /qa-engineering to add comprehensive tests for this module"
 "Use /reverse-engineering to analyze and reimplement this external library"
 ```
+
+Skills can also be invoked through natural language that clearly indicates the need for that expertise (e.g., "review my code before pushing" will engage `/work-review`).
 
 ## 🎓 Available Expertise
 
