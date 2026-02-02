@@ -155,10 +155,6 @@ Please ensure contributions:
 - Reference authoritative sources where applicable
 - Are tested with real-world Claude interactions
 
-## License
-
-This repository is designed to enhance AI-assisted development. Please check individual files for specific licensing information.
-
 ## Why AgentRules?
 
 Traditional AI assistants provide general-purpose help. AgentRules transforms Claude into a **specialist on-demand**:
@@ -168,5 +164,3 @@ Traditional AI assistants provide general-purpose help. AgentRules transforms Cl
 - **Adaptability**: Right expertise for the right task
 - **Efficiency**: Less explanation needed, better results faster
 - **Quality**: Built-in review processes and verification steps
-
-Start using AgentRules today to elevate your AI-assisted development workflow.
