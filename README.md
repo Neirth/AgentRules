@@ -50,7 +50,7 @@ AgentRules/
 └── skills/                     # Detailed methodologies and workflows
     ├── computer-science/       # Computer science and software engineering
     │   ├── SKILL.md
-    │   └── capabilities/
+    │   └── references/
     │       ├── machine-learning-engineering.md
     │       ├── qa-engineering.md
     │       ├── reverse-engineering.md
@@ -58,7 +58,7 @@ AgentRules/
     │       └── work-review.md
     ├── general-engineering/    # Universal engineering principles
     │   ├── SKILL.md
-    │   └── capabilities/
+    │   └── references/
     │       ├── classical-mathematical.md
     │       ├── formal-verification.md
     │       └── qa-engineering.md
@@ -70,13 +70,18 @@ AgentRules/
 
 ### Skills Organization
 
-Skills are organized into three main categories:
+Skills follow the [Anthropic skill structure](https://github.com/anthropics/skills) with each skill containing:
+
+- **SKILL.md** - Concise overview with YAML frontmatter (name, description) and usage instructions
+- **references/** - Detailed reference documentation loaded as needed
+
+Our three main skills:
 
 - **computer-science** - Computer science and software engineering capabilities (machine learning, QA, reverse engineering, software engineering, code review)
 - **general-engineering** - Universal engineering principles and foundational methodologies (classical mathematics, formal verification, QA)
 - **graphics-design** - Visual design and design systems following industry best practices
 
-Each skill category contains a main SKILL.md and a `capabilities/` directory with detailed capability documentation.
+Each skill's SKILL.md provides a brief overview and references to detailed documentation in the `references/` directory.
 
 ### Rules vs Skills
 
