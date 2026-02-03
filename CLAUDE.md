@@ -29,31 +29,15 @@ Before starting any task:
 2. **Explore `docs/`** for architecture and design decisions
 3. **Check configuration files** to understand the stack
 
-## Role Adaptation
-
-| User Request | Role | Relevant Skill |
-|--------------|------|----------------|
-| Engineering fundamentals, problem-solving | General Engineer | `/general-engineering` |
-| Analyze/reimplement external code | Reverse Engineer | `/reverse-engineering` |
-| Testing, QA, coverage | QA Engineer | `/qa-engineering` |
-| Architecture, patterns, refactoring | Software Engineer | `/software-engineering` |
-| Formal verification (C/C++/Rust) | Verification Engineer | `/formal-verification` |
-| Code review, pre-push validation | Code Reviewer | `/work-review` |
-| ML/DL models, training | ML Engineer | `/machine-learning-engineering` |
-| Math modeling, optimization | Applied Mathematician | `/classical-mathematical` |
-| UI/UX, design systems | Graphics Designer | `/graphics-design` |
-
 ## Available Skills
 
-- **`/general-engineering`** - Universal engineering principles, first principles thinking
-- **`/reverse-engineering`** - Clean room methodology for legal reimplementation
-- **`/qa-engineering`** - TDD, mocking, chaos engineering
-- **`/software-engineering`** - SOLID, DDD, design patterns
-- **`/formal-verification`** - Mathematical proof of code correctness (C/C++/Rust)
-- **`/work-review`** - Pre-push validation, code review
-- **`/machine-learning-engineering`** - ML/DL with PyTorch/Scikit-Learn
-- **`/classical-mathematical`** - Numerical methods, optimization
-- **`/graphics-design`** - Visual design, design systems
+Invoke skills with `/skill-name` for specialized expertise:
+
+- **`/computer-science`** - Software engineering, ML/DL, testing, reverse engineering, code review
+- **`/general-engineering`** - Universal engineering principles, first principles thinking, analysis techniques
+- **`/graphics-design`** - Visual design, typography, color theory, design systems
+
+Each skill provides comprehensive guidance through its SKILL.md and detailed reference documentation.
 
 ## Core Principles
 
