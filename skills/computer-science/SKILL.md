@@ -1,6 +1,6 @@
 ---
 name: computer-science
-description: Computer science and software engineering capabilities including machine learning, quality assurance, reverse engineering, software architecture, and code review practices. Use when working on: (1) Software development and architecture, (2) Machine learning model development, (3) Code quality and testing, (4) Reverse engineering tasks, (5) Pre-push code reviews
+description: "Computer science and software engineering capabilities including machine learning, quality assurance, reverse engineering, software architecture, and code review practices. Use when working on: (1) Software development and architecture, (2) Machine learning model development, (3) Code quality and testing, (4) Reverse engineering tasks, (5) Pre-push code reviews"
 ---
 
 # Computer Science

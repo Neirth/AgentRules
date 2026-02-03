@@ -1,6 +1,6 @@
 ---
 name: general-engineering
-description: Apply fundamental engineering principles, methodologies, and professional practices that transcend specific disciplines - applicable to mechanical, electrical, civil, chemical, aerospace, and all engineering domains. Use when: (1) Applying first principles thinking, (2) Engineering problem-solving and analysis, (3) Design for reliability and safety, (4) Risk management and quality assurance, (5) Professional engineering practice
+description: "Apply fundamental engineering principles, methodologies, and professional practices that transcend specific disciplines - applicable to mechanical, electrical, civil, chemical, aerospace, and all engineering domains. Use when: (1) Applying first principles thinking, (2) Engineering problem-solving and analysis, (3) Design for reliability and safety, (4) Risk management and quality assurance, (5) Professional engineering practice"
 ---
 
 # General Engineering Principles and Methodologies

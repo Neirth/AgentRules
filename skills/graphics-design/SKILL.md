@@ -1,6 +1,6 @@
 ---
 name: graphics-design
-description: Apply world-class graphic design principles following Apple HIG, Google Material Design, IBM Carbon, Airbnb DLS, Microsoft Fluent, and Netflix Hawkins design systems. Use when: (1) Designing user interfaces, (2) Creating visual designs, (3) Establishing design systems, (4) Ensuring accessibility compliance, (5) Working with typography or color theory
+description: "Apply world-class graphic design principles following Apple HIG, Google Material Design, IBM Carbon, Airbnb DLS, Microsoft Fluent, and Netflix Hawkins design systems. Use when: (1) Designing user interfaces, (2) Creating visual designs, (3) Establishing design systems, (4) Ensuring accessibility compliance, (5) Working with typography or color theory"
 ---
 
 # Graphics Design Engineering Rules
