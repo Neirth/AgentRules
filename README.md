@@ -48,15 +48,21 @@ AgentRules/
 │   └── mathematical/           # Pure mathematics (non-engineering)
 │       └── classical-math.md
 └── skills/                     # Detailed methodologies and workflows
-    ├── general-engineering/
-    ├── reverse-engineering/
-    ├── qa-engineering/
-    ├── software-engineering/
-    ├── formal-verification/
-    ├── work-review/
-    ├── machine-learning-engineering/
-    ├── classical-mathematical/
-    └── graphics-design/
+    ├── engineering/            # All engineering disciplines unified
+    │   ├── fundamentals/
+    │   │   └── general-engineering/
+    │   ├── software/
+    │   │   ├── software-engineering/
+    │   │   ├── qa-engineering/
+    │   │   ├── reverse-engineering/
+    │   │   ├── formal-verification/
+    │   │   └── work-review/
+    │   ├── machine-learning/
+    │   │   └── machine-learning-engineering/
+    │   └── graphics/
+    │       └── graphics-design/
+    └── mathematical/           # Pure mathematics (non-engineering)
+        └── classical-mathematical/
 ```
 
 **Note**: When integrated into your project, this repository becomes your `.claude/` directory, making all rules and skills available to Claude.
