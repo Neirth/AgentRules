@@ -5,14 +5,20 @@
 **BEFORE taking ANY action in this repository, you MUST:**
 
 1. **Read ALL rule files** in the `rules/` directory:
-   - `rules/engineering/general-engineering.md` - Fundamental engineering principles
-   - `rules/computer-science/reverse-engineering.md` - Analyzing external code
-   - `rules/computer-science/qa-engineering.md` - Testing requirements
+   
+   **Computer Science:**
    - `rules/computer-science/software-engineering.md` - Code design and implementation
+   - `rules/computer-science/qa-engineering.md` - Testing requirements
+   - `rules/computer-science/reverse-engineering.md` - Analyzing external code
    - `rules/computer-science/formal-verification.md` - Mathematical proof of correctness (C/C++/Rust)
    - `rules/computer-science/work-review.md` - Pre-push validation requirements
-   - `rules/mathematical/machine-learning.md` - ML/DL tasks
-   - `rules/mathematical/classical-math.md` - Mathematical modeling
+   
+   **General Engineering:**
+   - `rules/general-engineering/general-engineering.md` - Fundamental engineering principles
+   - `rules/general-engineering/classical-math.md` - Mathematical modeling
+   - `rules/general-engineering/machine-learning.md` - ML/DL tasks
+   
+   **Graphics Design:**
    - `rules/graphics-design/graphics-design.md` - UI/UX design
 
 2. **Apply the rules**: Every action must comply with the relevant rules above.
@@ -60,13 +66,12 @@ rules/
 │   ├── reverse-engineering.md
 │   ├── formal-verification.md
 │   └── work-review.md
-├── engineering/                # General engineering
-│   └── general-engineering.md
-├── graphics-design/            # UI/UX design
-│   └── graphics-design.md
-└── mathematical/               # Mathematics
-    ├── machine-learning.md
-    └── classical-math.md
+├── general-engineering/        # Engineering & mathematics
+│   ├── general-engineering.md
+│   ├── classical-math.md
+│   └── machine-learning.md
+└── graphics-design/            # UI/UX design
+    └── graphics-design.md
 ```
 
 **Failure to follow these rules will result in:**
