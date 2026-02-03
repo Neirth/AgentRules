@@ -14,6 +14,24 @@ These rules establish the methodology for designing, implementing, and maintaini
 
 ---
 
+## Table of Contents
+
+- [Purpose](#purpose)
+- [Core Philosophy](#core-philosophy)
+- [SOLID Principles](#solid-principles)
+- [Design Patterns (Gang of Four)](#design-patterns-gang-of-four)
+- [Domain-Driven Design (DDD)](#domain-driven-design-ddd)
+- [Event-Driven Architecture (EDA)](#event-driven-architecture-eda)
+- [Fundamental Algorithms and Data Structures](#fundamental-algorithms-and-data-structures)
+- [Microservices Lessons](#microservices-lessons)
+- [Code Quality Principles](#code-quality-principles)
+- [Documentation Standards](#documentation-standards)
+- [Checklist](#checklist)
+- [Anthropic's AI Safety Engineering Philosophy](#anthropics-ai-safety-engineering-philosophy)
+- [Remember](#remember)
+
+---
+
 ## Core Philosophy
 
 ### The Three Pillars of Software Excellence
@@ -1471,6 +1489,41 @@ Anthropic's approach to deploying AI systems incrementally with continuous safet
 4. **Measure Everything**: Comprehensive observability enables rapid problem detection
 5. **Alignment by Design**: Ensure intended behavior matches actual behavior through testing
 6. **Responsible Scaling**: Capability should grow proportionally with safety measures
+
+---
+
+## See Also
+
+**Related references in other skills:**
+
+- **[general-engineering/engineering-method.md](../../general-engineering/references/engineering-method.md)** - Universal engineering problem-solving framework applicable to software design
+- **[general-engineering/first-principles.md](../../general-engineering/references/first-principles.md)** - Fundamental principles (conservation, equilibrium, scaling) that apply to software architecture
+- **[general-engineering/design-principles.md](../../general-engineering/references/design-principles.md)** - Engineering design principles (KISS, modularity, fail-safe) for robust software systems
+
+---
+
+## Navigation Tips
+
+**Searching this document (1400+ lines):**
+
+```bash
+# Find all major sections
+grep -n "^## " software-engineering.md
+
+# Find specific topics
+grep -i "strategy pattern" software-engineering.md
+grep -i "bounded context" software-engineering.md
+grep -i "event sourcing" software-engineering.md
+
+# Find all code examples and diagrams
+grep "^│" software-engineering.md
+
+# Find all checklists
+grep "^\[ \]" software-engineering.md
+
+# Find tools and frameworks mentioned
+grep "Tools:" software-engineering.md
+```
 
 ---
 

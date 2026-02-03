@@ -17,6 +17,29 @@ These rules establish the methodology for **formal verification** and **mathemat
 
 ---
 
+## Table of Contents
+
+- [Purpose](#purpose)
+- [The Foundation: Why Formal Verification?](#the-foundation-why-formal-verification)
+- [Academic & Industrial Foundations](#academic--industrial-foundations)
+- [Supported Languages & Rationale](#supported-languages--rationale)
+- [Formal Verification Techniques](#formal-verification-techniques)
+- [The seL4 Verification Approach](#the-sel4-verification-approach)
+- [Verification Workflow](#verification-workflow)
+- [Tool Selection Guide](#tool-selection-guide)
+- [Practical Verification Patterns](#practical-verification-patterns)
+- [Writing Verification-Friendly Code](#writing-verification-friendly-code)
+- [Common Verification Challenges](#common-verification-challenges)
+- [Integration with Development Process](#integration-with-development-process)
+- [Tool Installation & Setup](#tool-installation--setup)
+- [Best Practices Checklist](#best-practices-checklist)
+- [Cost-Benefit Analysis](#cost-benefit-analysis)
+- [Key Takeaways](#key-takeaways)
+- [References & Further Reading](#references--further-reading)
+- [Conclusion](#conclusion)
+
+---
+
 ## The Foundation: Why Formal Verification?
 
 ### The Assurance Gap
@@ -1144,6 +1167,42 @@ git clone https://github.com/seL4/l4v.git
 - MIT 6.826: Principles of Computer Systems (verification focus)
 - Stanford CS357: Formal Methods
 - Coursera: "Software Security" (includes formal methods module)
+
+---
+
+## See Also
+
+**Related references in other skills:**
+
+- **[computer-science/software-engineering.md](../../computer-science/references/software-engineering.md)** - Design patterns and clean code principles for verification-friendly code
+- **[computer-science/work-review.md](../../computer-science/references/work-review.md)** - Pre-push validation practices that integrate formal verification into development workflow
+- **[computer-science/qa-engineering.md](../../computer-science/references/qa-engineering.md)** - Testing methodologies that complement formal verification
+
+---
+
+## Navigation Tips
+
+**Searching this document (1100+ lines):**
+
+```bash
+# Find all major sections
+grep -n "^## " formal-verification.md
+
+# Find specific tools and techniques
+grep -i "frama-c" formal-verification.md
+grep -i "isabelle" formal-verification.md
+grep -i "cbmc" formal-verification.md
+grep -i "prusti" formal-verification.md
+
+# Find all verification patterns
+grep "Pattern [0-9]:" formal-verification.md
+
+# Find installation instructions
+grep -i "install" formal-verification.md
+
+# Find all diagrams and workflows
+grep "^│" formal-verification.md
+```
 
 ---
 

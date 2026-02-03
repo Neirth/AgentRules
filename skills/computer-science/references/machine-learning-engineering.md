@@ -17,6 +17,21 @@ These rules establish the methodology for developing robust, production-ready ma
 
 ---
 
+## Table of Contents
+
+- [Purpose](#purpose)
+- [The Pioneers: Standing on Giants' Shoulders](#the-pioneers-standing-on-giants-shoulders)
+- [Classical Machine Learning Algorithms](#classical-machine-learning-algorithms)
+- [Deep Learning Architectures](#deep-learning-architectures)
+- [Karpathy's Recipe for Training Neural Networks](#karpathys-recipe-for-training-neural-networks)
+- [Hyperparameter Tuning & Validation](#hyperparameter-tuning--validation)
+- [ONNX: Production Deployment](#onnx-production-deployment)
+- [Complete ML Pipeline Template](#complete-ml-pipeline-template)
+- [Checklist](#checklist)
+- [Remember](#remember)
+
+---
+
 ## The Pioneers: Standing on Giants' Shoulders
 
 ### The Turing Award Winners (2018)
@@ -847,6 +862,43 @@ def onnx_inference(onnx_path, input_data):
 - [ ] Outputs match original model
 - [ ] Preprocessing included/documented
 - [ ] Performance benchmarked
+
+---
+
+## See Also
+
+**Related references in other skills:**
+
+- **[general-engineering/classical-mathematical.md](../../general-engineering/references/classical-mathematical.md)** - Linear algebra, optimization theory, and numerical methods foundational to ML/DL
+- **[general-engineering/engineering-method.md](../../general-engineering/references/engineering-method.md)** - Systematic approach to problem-solving applicable to ML pipeline development
+
+---
+
+## Navigation Tips
+
+**Searching this document (850+ lines):**
+
+```bash
+# Find all major sections
+grep -n "^## " machine-learning-engineering.md
+
+# Find specific algorithms and architectures
+grep -i "random forest" machine-learning-engineering.md
+grep -i "resnet" machine-learning-engineering.md
+grep -i "transformer" machine-learning-engineering.md
+
+# Find Karpathy's recipe steps
+grep -i "karpathy" machine-learning-engineering.md
+
+# Find ONNX-related content
+grep -i "onnx" machine-learning-engineering.md
+
+# Find all code examples
+grep "```python" machine-learning-engineering.md
+
+# Find hyperparameter tuning guidance
+grep -i "hyperparameter" machine-learning-engineering.md
+```
 
 ---
 

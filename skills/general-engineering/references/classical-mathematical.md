@@ -15,82 +15,20 @@ These rules establish the methodology for mathematical modeling, numerical analy
 
 ---
 
-## The Academic Foundations
+## Table of Contents
 
-### World-Leading Mathematics Programs
-
-```
-┌─────────────────────────────────────────────────────────────────┐
-│              ACADEMIC FOUNDATIONS                               │
-├─────────────────────────────────────────────────────────────────┤
-│                                                                 │
-│  MIT (Massachusetts Institute of Technology) ───────────────    │
-│  │ Course 18: Mathematics                                       │
-│  │ • 18.06: Linear Algebra (Gilbert Strang)                     │
-│  │ • 18.03: Differential Equations                              │
-│  │ • 18.085: Computational Science and Engineering              │
-│  │ • 18.330: Introduction to Numerical Analysis                 │
-│  │                                                              │
-│  │ "Basic subject on matrix theory emphasizing topics useful    │
-│  │  in other disciplines: systems of equations, vector spaces,  │
-│  │  eigenvalues, SVD, and positive definite matrices."          │
-│  └──────────────────────────────────────────────────────────    │
-│                                                                 │
-│  HARVARD (SEAS Applied Mathematics) ────────────────────────    │
-│  │ • AM 21a: Multivariable Calculus                             │
-│  │ • AM 105: Ordinary & Partial Differential Equations          │
-│  │ • AM 120: Applied Linear Algebra & Big Data                  │
-│  │ • AM 207: Stochastic Methods for Data Analysis               │
-│  │ • AM 225: Advanced Scientific Computing                      │
-│  │                                                              │
-│  │ "Emphasis on numerical methods for ODEs and PDEs,            │
-│  │  including finite element, finite volume, and spectral."     │
-│  └──────────────────────────────────────────────────────────    │
-│                                                                 │
-│  OXFORD (Mathematical Institute) ───────────────────────────    │
-│  │ • Pure & Applied Mathematics core                            │
-│  │ • Probability and Statistics specialization                  │
-│  │ • Numerical Analysis                                         │
-│  │ • Mathematical Modelling                                     │
-│  │                                                              │
-│  │ "Strong research in statistical machine learning and         │
-│  │  scalable methods for Big Data."                             │
-│  └──────────────────────────────────────────────────────────    │
-│                                                                 │
-│  UC BERKELEY (EECS + Mathematics) ──────────────────────────    │
-│  │ • EECS 127: Optimization Models and Applications             │
-│  │ • EE 227B/C: Convex Optimization                             │
-│  │ • Math 128A: Numerical Analysis                              │
-│  │                                                              │
-│  │ "Theory and algorithms for nonlinear optimization,           │
-│  │  focusing on machine learning and data analysis."            │
-│  │  — Textbooks: Boyd & Vandenberghe, Nesterov                  │
-│  └──────────────────────────────────────────────────────────    │
-│                                                                 │
-│  PEKING UNIVERSITY ─────────────────────────────────────────    │
-│  │ School of Mathematical Sciences                              │
-│  │ • Computational Mathematics                                  │
-│  │ • Numerical PDEs                                             │
-│  │ • Scientific Computing                                       │
-│  │                                                              │
-│  │ Research: "Numerical solution of PDEs and computation        │
-│  │  and simulation of particle fluid dynamics."                 │
-│  │  — Prof. Pingwen Zhang (CSIAM President)                     │
-│  └──────────────────────────────────────────────────────────    │
-│                                                                 │
-│  UPV VALENCIA ──────────────────────────────────────────────    │
-│  │ MUCEIM: Computational Engineering & Industrial Mathematics   │
-│  │ • Mathematical Modeling in Industry                          │
-│  │ • Simulation in Logistics and Finance                        │
-│  │ • Optimization and Heuristic Algorithms                      │
-│  │ • Computational Fluid Dynamics                               │
-│  │                                                              │
-│  │ "Training in complex systems modeling, algorithm             │
-│  │  development, optimization, and simulation."                 │
-│  └──────────────────────────────────────────────────────────    │
-│                                                                 │
-└─────────────────────────────────────────────────────────────────┘
-```
+- [Purpose](#purpose)
+- [Linear Algebra Foundations](#linear-algebra-foundations)
+- [Differential Equations](#differential-equations)
+- [Numerical Methods](#numerical-methods)
+- [Optimization Theory](#optimization-theory)
+- [Graph Theory and Network Algorithms](#graph-theory-and-network-algorithms)
+- [Stochastic Methods and Monte Carlo](#stochastic-methods-and-monte-carlo)
+- [Mathematical Modeling Process](#mathematical-modeling-process)
+- [Numerical Stability and Error Analysis](#numerical-stability-and-error-analysis)
+- [Computational Tools](#computational-tools)
+- [Checklist for Mathematical Modeling](#checklist-for-mathematical-modeling)
+- [Remember](#remember)
 
 ---
 
@@ -1030,6 +968,41 @@ These rules establish the methodology for mathematical modeling, numerical analy
 - [ ] Sensitivity analysis performed
 - [ ] Uncertainty quantified
 - [ ] Results physically meaningful
+
+---
+
+## See Also
+
+**Related references in other skills:**
+
+- **[computer-science/machine-learning-engineering.md](../../computer-science/references/machine-learning-engineering.md)** - Practical ML/DL implementation building on mathematical foundations covered here
+- **[general-engineering/formal-verification.md](formal-verification.md)** - Mathematical proof techniques for code correctness
+
+---
+
+## Navigation Tips
+
+**Searching this document (970+ lines):**
+
+```bash
+# Find all major sections
+grep -n "^## " classical-mathematical.md
+
+# Find specific methods and algorithms
+grep -i "SVD" classical-mathematical.md
+grep -i "finite element" classical-mathematical.md
+grep -i "monte carlo" classical-mathematical.md
+grep -i "dijkstra" classical-mathematical.md
+
+# Find all formulas and equations
+grep "[∫∂∇]" classical-mathematical.md
+
+# Find computational complexity notes
+grep "O(" classical-mathematical.md
+
+# Find all diagrams
+grep "^│" classical-mathematical.md
+```
 
 ---
 

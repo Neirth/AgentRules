@@ -15,6 +15,27 @@ These rules establish the methodology for legally and ethically analyzing extern
 
 ---
 
+## Table of Contents
+
+- [Purpose](#purpose)
+- [Core Principles](#core-principles)
+- [The Clean Room Process](#the-clean-room-process)
+- [Function Specification Template](#function-specification-template)
+- [Specification Levels](#specification-levels)
+- [System: File Compression Utility](#system-file-compression-utility)
+- [Component: Compression Engine](#component-compression-engine)
+- [Interface: Compressed File Format](#interface-compressed-file-format)
+- [Test-Driven Reverse Engineering](#test-driven-reverse-engineering)
+- [Test-Driven Specification](#test-driven-specification)
+- [Legal and Ethical Framework](#legal-and-ethical-framework)
+- [Documentation Requirements](#documentation-requirements)
+- [Clean Room Development Log](#clean-room-development-log)
+- [Historical Case Studies](#historical-case-studies)
+- [Implementation Checklist](#implementation-checklist)
+- [Remember](#remember)
+
+---
+
 ## Core Principles
 
 ### 1. The Chinese Wall: Separation of Concerns

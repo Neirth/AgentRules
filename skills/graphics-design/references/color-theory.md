@@ -1,5 +1,19 @@
 ## Color Theory
 
+### Table of Contents
+
+- [Color Roles (Material Design 3)](#color-roles-material-design-3)
+- [Apple's Color Guidelines](#apples-color-guidelines)
+- [IBM Carbon Color Tokens](#ibm-carbon-color-tokens)
+- [Pantone Matching System (PMS)](#pantone-matching-system-pms)
+  - [The Industry Standard for Color](#the-industry-standard-for-color)
+  - [Famous Brand Pantone Colors](#famous-brand-pantone-colors)
+  - [PMS vs Digital Colors](#pms-vs-digital-colors)
+  - [Pantone Tools & Resources](#pantone-tools--resources)
+  - [Brand Color Specification](#brand-color-specification)
+
+---
+
 ### Color Roles (Material Design 3)
 
 ```

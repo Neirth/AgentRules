@@ -15,6 +15,31 @@ These rules establish the methodology for creating robust, maintainable, and rel
 
 ---
 
+## Table of Contents
+
+- [Purpose](#purpose)
+- [Core Philosophy](#core-philosophy)
+- [Test-Driven Development (TDD)](#test-driven-development-tdd)
+- [Mocking Strategy](#mocking-strategy)
+- [Testing Levels](#testing-levels)
+- [Unit Test Guidelines](#unit-test-guidelines)
+- [Chaos Engineering](#chaos-engineering)
+- [Chaos Experiment Template](#chaos-experiment-template)
+- [Flaky Test Management](#flaky-test-management)
+- [Flaky Test Checklist](#flaky-test-checklist)
+- [Testing Microservices](#testing-microservices)
+- [Testing Culture](#testing-culture)
+- [Testing Culture Principles](#testing-culture-principles)
+- [Red Hat's Linux Kernel Testing](#red-hats-linux-kernel-testing)
+- [System Testing Methodology](#system-testing-methodology)
+- [Test Maintainability](#test-maintainability)
+- [Common Test Smells](#common-test-smells)
+- [Continuous Integration](#continuous-integration)
+- [Checklist](#checklist)
+- [Remember](#remember)
+
+---
+
 ## Core Philosophy
 
 ### Quality is Everyone's Responsibility
@@ -547,6 +572,31 @@ For low-level systems like kernels, Red Hat employs:
 - [ ] Monitoring in place
 - [ ] Runbooks updated
 - [ ] On-call rotation defined
+
+---
+
+## Navigation Tips
+
+**Searching this document (560+ lines):**
+
+```bash
+# Find all major sections
+grep -n "^## " qa-engineering.md
+
+# Find specific testing topics
+grep -i "TDD" qa-engineering.md
+grep -i "chaos engineering" qa-engineering.md
+grep -i "flaky test" qa-engineering.md
+
+# Find Netflix's chaos practices
+grep -i "netflix" qa-engineering.md
+
+# Find all checklists
+grep "^\[ \]" qa-engineering.md
+
+# Find testing levels
+grep -i "unit test\|integration test\|e2e" qa-engineering.md
+```
 
 ---
 

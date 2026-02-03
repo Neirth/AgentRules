@@ -1,5 +1,22 @@
 ## Swiss Design: International Typographic Style
 
+### Table of Contents
+
+- [The Foundation: Bauhaus and Modernism](#the-foundation-bauhaus-and-modernism)
+- [The Swiss Grid System](#the-swiss-grid-system)
+- [Swiss Typography Principles](#swiss-typography-principles)
+- [Swiss Color Philosophy](#swiss-color-philosophy)
+- [Whitespace (Negative Space)](#whitespace-negative-space)
+- [Swiss Photography and Imagery](#swiss-photography-and-imagery)
+- [Swiss Product Design: Form Follows Function](#swiss-product-design-form-follows-function)
+- [Swiss Design Pioneers](#swiss-design-pioneers)
+- [Modern Applications of Swiss Design](#modern-applications-of-swiss-design)
+- [Swiss Design Checklist](#swiss-design-checklist)
+- [Key Takeaways from Swiss Design](#key-takeaways-from-swiss-design)
+- [Remember](#remember)
+
+---
+
 ### The Foundation: Bauhaus and Modernism
 
 Swiss Design (International Typographic Style) emerged in Switzerland in the 1950s, building on Bauhaus principles and modernist philosophy. It revolutionized graphic design by emphasizing objectivity, clarity, and mathematical precision. Today, it influences everything from Apple's minimalism to Google's Material Design.

@@ -15,6 +15,31 @@ These rules establish the methodology for conducting thorough work reviews and p
 
 ---
 
+## Table of Contents
+
+- [Purpose](#purpose)
+- [Core Philosophy](#core-philosophy)
+- [Pre-Commit Validation Pipeline](#pre-commit-validation-pipeline)
+- [Tool Warning Management](#tool-warning-management)
+- [File Management](#file-management)
+- [Testing Requirements](#testing-requirements)
+- [Before Requesting Review](#before-requesting-review)
+- [Whole Project Validation](#whole-project-validation)
+- [Code Review Mechanics](#code-review-mechanics)
+- [Review Checklist](#review-checklist)
+- [Ownership and Accountability](#ownership-and-accountability)
+- [Automation and Tooling](#automation-and-tooling)
+- [Change-Type-Specific Checklists](#change-type-specific-checklists)
+- [Feature Change Checklist](#feature-change-checklist)
+- [Bug Fix Checklist](#bug-fix-checklist)
+- [Refactoring Checklist](#refactoring-checklist)
+- [Performance Optimization Checklist](#performance-optimization-checklist)
+- [Continuous Improvement](#continuous-improvement)
+- [Post-Review Retrospective](#post-review-retrospective)
+- [Remember](#remember)
+
+---
+
 ## Core Philosophy
 
 ### The Pre-Push Validation Manifesto
@@ -621,6 +646,32 @@ hooks:
 - Process improvements to implement
 - Team discussions to schedule
 - Documentation to create/update
+```
+
+---
+
+## Navigation Tips
+
+**Searching this document (640+ lines):**
+
+```bash
+# Find all major sections
+grep -n "^## " work-review.md
+
+# Find specific checklist types
+grep -i "feature change" work-review.md
+grep -i "bug fix" work-review.md
+grep -i "refactoring" work-review.md
+
+# Find all checklists
+grep "^\[ \]" work-review.md
+
+# Find validation pipeline steps
+grep -i "validation" work-review.md
+
+# Find tool-specific guidance
+grep -i "warning" work-review.md
+grep -i "linter" work-review.md
 ```
 
 ---
