@@ -48,35 +48,35 @@ AgentRules/
 │   └── mathematical/           # Pure mathematics (non-engineering)
 │       └── classical-math.md
 └── skills/                     # Detailed methodologies and workflows
-    ├── engineering/            # All engineering disciplines unified
-    │   ├── fundamentals/
-    │   │   └── general-engineering/
-    │   ├── software/
-    │   │   ├── software-engineering/
-    │   │   ├── qa-engineering/
-    │   │   ├── reverse-engineering/
-    │   │   ├── formal-verification/
-    │   │   └── work-review/
-    │   ├── machine-learning/
-    │   │   └── machine-learning-engineering/
-    │   └── graphics/
-    │       └── graphics-design/
-    └── mathematical/           # Pure mathematics (non-engineering)
-        └── classical-mathematical/
+    ├── computer-science/       # Computer science and software engineering
+    │   ├── SKILL.md
+    │   └── capabilities/
+    │       ├── machine-learning-engineering.md
+    │       ├── qa-engineering.md
+    │       ├── reverse-engineering.md
+    │       ├── software-engineering.md
+    │       └── work-review.md
+    ├── general-engineering/    # Universal engineering principles
+    │   ├── SKILL.md
+    │   └── capabilities/
+    │       ├── classical-mathematical.md
+    │       ├── formal-verification.md
+    │       └── qa-engineering.md
+    └── graphics-design/        # Visual design and design systems
+        └── SKILL.md
 ```
 
 **Note**: When integrated into your project, this repository becomes your `.claude/` directory, making all rules and skills available to Claude.
 
-### Unified Engineering Categories
+### Skills Organization
 
-All engineering disciplines are now organized under `rules/engineering/` for better discoverability and semantic clarity:
+Skills are organized into three main categories:
 
-- **Fundamentals** - Universal engineering principles applicable to all disciplines
-- **Software** - Software engineering, QA, reverse engineering, formal verification, code review
-- **Machine Learning** - ML/DL engineering practices
-- **Graphics** - UI/UX and design systems engineering
+- **computer-science** - Computer science and software engineering capabilities (machine learning, QA, reverse engineering, software engineering, code review)
+- **general-engineering** - Universal engineering principles and foundational methodologies (classical mathematics, formal verification, QA)
+- **graphics-design** - Visual design and design systems following industry best practices
 
-Pure mathematical content (non-engineering) remains in `rules/mathematical/`.
+Each skill category contains a main SKILL.md and a `capabilities/` directory with detailed capability documentation.
 
 ### Rules vs Skills
 
