@@ -5,15 +5,15 @@
 **BEFORE taking ANY action in this repository, you MUST:**
 
 1. **Read ALL rule files** in the `rules/` directory:
-   - `rules/engineering/general-engineering.md` - For fundamental engineering principles
-   - `rules/computer-science/reverse-engineering.md` - For analyzing external code
-   - `rules/computer-science/qa-engineering.md` - For testing requirements
-   - `rules/computer-science/software-engineering.md` - For code design and implementation
-   - `rules/computer-science/formal-verification.md` - For mathematical proof of code correctness (C/C++/Rust only)
-   - `rules/computer-science/work-review.md` - For pre-push validation requirements
-   - `rules/mathematical/machine-learning.md` - For ML/DL tasks
+   - `rules/engineering/fundamentals/general-engineering.md` - For fundamental engineering principles
+   - `rules/engineering/software/reverse-engineering.md` - For analyzing external code
+   - `rules/engineering/software/qa-engineering.md` - For testing requirements
+   - `rules/engineering/software/software-engineering.md` - For code design and implementation
+   - `rules/engineering/software/formal-verification.md` - For mathematical proof of code correctness (C/C++/Rust only)
+   - `rules/engineering/software/work-review.md` - For pre-push validation requirements
+   - `rules/engineering/machine-learning/machine-learning.md` - For ML/DL tasks
    - `rules/mathematical/classical-math.md` - For mathematical modeling
-   - `rules/graphics-design/graphics-design.md` - For UI/UX tasks
+   - `rules/engineering/graphics/graphics-design.md` - For UI/UX tasks
 
 2. **Understand the consequences**: If you don't read and follow these rules:
    - Git hooks and project tooling may **block your commits**
@@ -95,19 +95,21 @@ Regardless of role:
 
 ```
 rules/
-├── engineering/
-│   └── general-engineering.md     (MUST READ for engineering fundamentals)
-├── computer-science/
-│   ├── reverse-engineering.md    (MUST READ for external code analysis)
-│   ├── qa-engineering.md          (MUST READ for testing)
-│   ├── software-engineering.md    (MUST READ for code changes)
-│   ├── formal-verification.md     (MUST READ for formal verification tasks)
-│   └── work-review.md             (MUST READ for pre-push validation)
-├── mathematical/
-│   ├── machine-learning.md        (MUST READ for ML tasks)
-│   └── classical-math.md          (MUST READ for math modeling)
-└── graphics-design/
-    └── graphics-design.md         (MUST READ for UI/UX work)
+├── engineering/                   # All engineering disciplines unified
+│   ├── fundamentals/
+│   │   └── general-engineering.md     (MUST READ for engineering fundamentals)
+│   ├── software/
+│   │   ├── software-engineering.md    (MUST READ for code changes)
+│   │   ├── qa-engineering.md          (MUST READ for testing)
+│   │   ├── reverse-engineering.md     (MUST READ for external code analysis)
+│   │   ├── formal-verification.md     (MUST READ for formal verification tasks)
+│   │   └── work-review.md             (MUST READ for pre-push validation)
+│   ├── machine-learning/
+│   │   └── machine-learning.md        (MUST READ for ML tasks)
+│   └── graphics/
+│       └── graphics-design.md         (MUST READ for UI/UX work)
+└── mathematical/                  # Pure mathematics (non-engineering)
+    └── classical-math.md          (MUST READ for math modeling)
 ```
 
 **These rules provide concise guidelines that complement the detailed skills.**
