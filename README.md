@@ -32,38 +32,28 @@ AgentRules/
 ├── CLAUDE.md                   # Main instruction file for Claude
 ├── .mcp.json                   # MCP server configurations
 ├── rules/                      # Concise, actionable guidelines
-│   ├── engineering/            # All engineering disciplines unified
-│   │   ├── fundamentals/
-│   │   │   └── general-engineering.md
-│   │   ├── software/
-│   │   │   ├── software-engineering.md
-│   │   │   ├── qa-engineering.md
-│   │   │   ├── reverse-engineering.md
-│   │   │   ├── formal-verification.md
-│   │   │   └── work-review.md
-│   │   ├── machine-learning/
-│   │   │   └── machine-learning.md
-│   │   └── graphics/
-│   │       └── graphics-design.md
-│   └── mathematical/           # Pure mathematics (non-engineering)
-│       └── classical-math.md
+│   ├── computer-science/       # Software engineering disciplines
+│   │   ├── software-engineering.md
+│   │   ├── qa-engineering.md
+│   │   ├── reverse-engineering.md
+│   │   ├── formal-verification.md
+│   │   └── work-review.md
+│   ├── general-engineering/    # Engineering & mathematics
+│   │   ├── general-engineering.md
+│   │   ├── classical-math.md
+│   │   └── machine-learning.md
+│   └── graphics-design/        # UI/UX design
+│       └── graphics-design.md
 └── skills/                     # Detailed methodologies and workflows
     ├── computer-science/       # Computer science and software engineering
     │   ├── SKILL.md
     │   └── references/
-    │       ├── machine-learning-engineering.md
-    │       ├── qa-engineering.md
-    │       ├── reverse-engineering.md
-    │       ├── software-engineering.md
-    │       └── work-review.md
     ├── general-engineering/    # Universal engineering principles
     │   ├── SKILL.md
     │   └── references/
-    │       ├── classical-mathematical.md
-    │       ├── formal-verification.md
-    │       └── qa-engineering.md
     └── graphics-design/        # Visual design and design systems
-        └── SKILL.md
+        ├── SKILL.md
+        └── references/
 ```
 
 **Note**: When integrated into your project, this repository becomes your `.claude/` directory, making all rules and skills available to Claude.
