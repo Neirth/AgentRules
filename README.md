@@ -32,19 +32,21 @@ AgentRules/
 ├── CLAUDE.md                   # Main instruction file for Claude
 ├── .mcp.json                   # MCP server configurations
 ├── rules/                      # Concise, actionable guidelines
-│   ├── engineering/
-│   │   └── general-engineering.md
-│   ├── computer-science/
-│   │   ├── reverse-engineering.md
-│   │   ├── qa-engineering.md
-│   │   ├── software-engineering.md
-│   │   ├── formal-verification.md
-│   │   └── work-review.md
-│   ├── mathematical/
-│   │   ├── machine-learning.md
-│   │   └── classical-math.md
-│   └── graphics-design/
-│       └── graphics-design.md
+│   ├── engineering/            # All engineering disciplines unified
+│   │   ├── fundamentals/
+│   │   │   └── general-engineering.md
+│   │   ├── software/
+│   │   │   ├── software-engineering.md
+│   │   │   ├── qa-engineering.md
+│   │   │   ├── reverse-engineering.md
+│   │   │   ├── formal-verification.md
+│   │   │   └── work-review.md
+│   │   ├── machine-learning/
+│   │   │   └── machine-learning.md
+│   │   └── graphics/
+│   │       └── graphics-design.md
+│   └── mathematical/           # Pure mathematics (non-engineering)
+│       └── classical-math.md
 └── skills/                     # Detailed methodologies and workflows
     ├── general-engineering/
     ├── reverse-engineering/
@@ -58,6 +60,17 @@ AgentRules/
 ```
 
 **Note**: When integrated into your project, this repository becomes your `.claude/` directory, making all rules and skills available to Claude.
+
+### Unified Engineering Categories
+
+All engineering disciplines are now organized under `rules/engineering/` for better discoverability and semantic clarity:
+
+- **Fundamentals** - Universal engineering principles applicable to all disciplines
+- **Software** - Software engineering, QA, reverse engineering, formal verification, code review
+- **Machine Learning** - ML/DL engineering practices
+- **Graphics** - UI/UX and design systems engineering
+
+Pure mathematical content (non-engineering) remains in `rules/mathematical/`.
 
 ### Rules vs Skills
 
@@ -93,8 +106,8 @@ Copy specific rules and skills you need into your project's `.claude/` directory
 
 ```bash
 # Copy only what you need
-mkdir -p .claude/rules/computer-science
-cp path/to/AgentRules/rules/computer-science/software-engineering.md .claude/rules/computer-science/
+mkdir -p .claude/rules/engineering/software
+cp path/to/AgentRules/rules/engineering/software/software-engineering.md .claude/rules/engineering/software/
 ```
 
 ### Using Skills
